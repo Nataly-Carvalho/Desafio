@@ -24,14 +24,14 @@ public class SwaggerConfig {
 						.version("V0.0.1")
 				.license(new License()
 						.name("Nataly Carvalho")
-						.url("https://github.com/Nataly-Carvalho/Desafio-Generation"))
+						.url("https://github.com/Nataly-Carvalho/Desafio-Gen"))
 				.contact(new Contact()
 						.name("Repositorio do desafio")
-						.url("https://github.com/Nataly-Carvalho/Desafio-Generation")
+						.url("https://github.com/Nataly-Carvalho/Desafio-Gen")
 						.email("natalycarvalho.dev@gmail.com")))
 				.externalDocs(new ExternalDocumentation()
 						.description("GitHub")
-						.url("https://github.com/Nataly-Carvalho/Desafio-Generation"));
+						.url("https://github.com/Nataly-Carvalho/Desafio-Gen"));
 	}
 	
 	@Bean
