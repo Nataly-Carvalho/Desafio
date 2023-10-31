@@ -1,6 +1,6 @@
 package com.generation.cadastroAlunos.configuration;
 
-import org.springdoc.core.customizers.OpenApiCustomiser;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -32,28 +32,6 @@ public class SwaggerConfig {
 				.externalDocs(new ExternalDocumentation()
 						.description("GitHub")
 						.url("https://github.com/Nataly-Carvalho/Desafio-Gen"));
-	}
-	
-	@Bean
-	public OpenApiCustomiser customerGlobalHeaderOpenApiCustomiser() {
-		return openApi ->{
-			openApi.getPaths().values().forEach(pathItem -> pathItem.readOperations().forEach(operation ->{
-				
-				ApiResponses apiResponses = operation.getResponses();
-				
-				apiResponses.addApiResponse("200", createApiResponse("Sucesso!"));
-				apiResponses.addApiResponse("201", createApiResponse("Objeto Persistido!"));
-				apiResponses.addApiResponse("204", createApiResponse("Objeto Excluido!"));
-				apiResponses.addApiResponse("400", createApiResponse("Erro na Requisição!"));
-				apiResponses.addApiResponse("401", createApiResponse("Acesso Não Autorizado!"));
-				apiResponses.addApiResponse("404", createApiResponse("Objeto Não encontrado!"));
-				apiResponses.addApiResponse("500", createApiResponse("Erro na Aplicação!"));
-				
-			}));
-		};
-	}
-	private ApiResponse createApiResponse(String message) {
-		return new ApiResponse().description(message);
 	}
 
 }
