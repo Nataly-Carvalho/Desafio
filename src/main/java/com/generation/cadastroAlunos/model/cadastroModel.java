@@ -57,19 +57,19 @@ public class cadastroModel {
 		this.nomeProfessor = nomeProfessor;
 	}
 
-	public String getNota1() {
+	public Float getNota1() {
 		return nota1;
 	}
 
-	public void setNota1(String nota1) {
+	public void setNota1(Float nota1) {
 		this.nota1 = nota1;
 	}
 
-	public String getNota2() {
+	public Float getNota2() {
 		return nota2;
 	}
 
-	public void setNota2(String nota2) {
+	public void setNota2(Float nota2) {
 		this.nota2 = nota2;
 	}
 
