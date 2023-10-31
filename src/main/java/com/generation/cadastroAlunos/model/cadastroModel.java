@@ -19,9 +19,9 @@ public class cadastroModel {
 	
 	private String nomeProfessor;
 	
-	private String nota1;
+	private Float nota1;
 	
-	private String nota2;
+	private Float nota2;
 	
 	private String numeroSala;
 
